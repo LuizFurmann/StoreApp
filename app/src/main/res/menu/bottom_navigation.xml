@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeId"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Início"/>
+    <item
+        android:id="@+id/purchasesId"
+        android:icon="@drawable/ic_purchase"
+        android:title="Compras"/>
+
+    <item
+        android:id="@+id/favoritId"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favoritos"/>
+
+</menu>

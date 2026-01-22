@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema base: segue o sistema automaticamente -->
+    <style name="Theme.ClientBook" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Cores principais -->
+        <item name="colorPrimary">@color/theme</item>
+        <item name="colorPrimaryContainer">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Fundo e texto -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/theme</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Toolbar padrão -->
+        <item name="toolbarStyle">@style/Theme.ClientBook.Toolbar</item>
+    </style>
+
+    <!-- Toolbar clara -->
+    <style name="Theme.ClientBook.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/white</item>
+        <item name="titleTextColor">@color/black</item>
+    </style>
+
+    <!-- Tema para telas sem ActionBar -->
+    <style name="Theme.ClientBook.NoActionBar" parent="Theme.ClientBook">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Tema usado em telas tipo “TaskView” -->
+    <style name="Theme.ClientBook.TaskView" parent="Theme.ClientBook.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Diálogo com cantos arredondados -->
+    <style name="MaterialAlertDialog_rounded" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/DialogCorners</item>
+    </style>
+
+    <style name="DialogCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>
